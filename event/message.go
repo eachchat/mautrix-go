@@ -80,6 +80,8 @@ type MessageEventContent struct {
 	MsgType MessageType `json:"msgtype"`
 	Body    string      `json:"body"`
 
+	BotBody string `json:"bot_body"`
+
 	// Extra fields for text types
 	Format        Format `json:"format,omitempty"`
 	FormattedBody string `json:"formatted_body,omitempty"`
