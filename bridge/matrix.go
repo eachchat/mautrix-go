@@ -64,6 +64,7 @@ func NewMatrixHandler(br *Bridge) *MatrixHandler {
 	br.EventProcessor.On(event.StateEncryption, handler.HandleEncryption)
 	br.EventProcessor.On(event.EphemeralEventReceipt, handler.HandleReceipt)
 	br.EventProcessor.On(event.EphemeralEventTyping, handler.HandleTyping)
+	br.EventProcessor.On(event.PollResponse, handler.HandleMessage)
 	return handler
 }
 

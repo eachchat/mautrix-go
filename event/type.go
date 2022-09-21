@@ -215,6 +215,8 @@ var (
 	BeeperMessageStatus = Type{"com.beeper.message_send_status", MessageEventType}
 )
 
+var PollResponse = Type{"org.matrix.msc3381.poll.response", MessageEventType}
+
 // Ephemeral events
 var (
 	EphemeralEventReceipt  = Type{"m.receipt", EphemeralEventType}
