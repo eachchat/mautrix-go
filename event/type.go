@@ -215,7 +215,10 @@ var (
 	BeeperMessageStatus = Type{"com.beeper.message_send_status", MessageEventType}
 )
 
-var PollResponse = Type{"org.matrix.msc3381.poll.response", MessageEventType}
+var (
+	PollResponse = Type{"org.matrix.msc3381.poll.response", MessageEventType}
+	PollStart    = Type{"org.matrix.msc3381.poll.start", MessageEventType}
+)
 
 // Ephemeral events
 var (
